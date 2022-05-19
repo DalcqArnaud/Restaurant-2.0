@@ -1,0 +1,8 @@
+body {
+    background-color: aliceblue;
+}
+
+.jumbotron, .cards, .nav {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
