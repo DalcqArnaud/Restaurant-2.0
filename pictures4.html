@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Localisation - La Rose dorée</title>
+    <title>Gallery - La Rose dorée</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     
@@ -33,10 +33,10 @@
           <a class="nav-link text-white" href="menu.html"><i class="fa-solid fa-scroll"></i> Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="pictures.html"><i class="fa-solid fa-image"></i> Gallery</a>
+          <a class="nav-link active text-secondary" aria-current="page" href="#"><i class="fa-solid fa-image"></i> Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-secondary" aria-current="page" href="#"><i class="fa-solid fa-location-dot"></i> Locations</a>
+          <a class="nav-link text-white" href="restaurant.html"><i class="fa-solid fa-location-dot"></i> Locations</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
@@ -46,25 +46,27 @@
   </div>
 </nav>
 
-<!-- Localisation -->
-<div class="row justify-content-around">
-  <!-- Informations -->
-  <div class="col-md-4 my-4">
-    <h1>Restaurants</h1>
-    <hr>
-    <h2>La Rose dorée</h2>
-    <p class="lead">Hurlevent, 85190 Aizenay, France</p>
-    <p class="lead"><strong>hours :</strong> <br> monday - friday : <em>10am - 11pm</em> <br> weekend : <em>closed</em></p>
-    <hr>
-    <h2>La Rose argentée</h2>
-    <p class="lead">Forgefer, 87250 Folles, France</p>
-    <p class="lead"><strong>hours :</strong> <br> monday - friday : <em>9am - 10pm</em><br> weekend : <em>10am - 2pm</em></p>
-  </div>
-  <!-- Map -->
-  <div class="col-md-6">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1u6s89sODfoLYquGIG20Et3jEQKvP-wy6&ehbc=2E312F" class="w-100 h-100"></iframe>
+<!-- Images -->
+<div class="container-fluid m-0 p-0">
+  <div class="row justify-content-center">
+    <img src="images/Gallery/Wine_sq.jpg"
+    class="w-25 shadow-1-strong rounded m-4 img-fluid" alt="Wine"/>
   </div>
 </div>
+
+<!-- Pagination -->
+<nav aria-label="...">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="pictures3.html">Previous</a></li>
+
+    <li class="page-item"><a class="page-link" href="pictures.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="pictures2.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="pictures3.html">3</a></li>
+    <li class="page-item active" aria-current="page"><a class="page-link" href="#">4</a></li>
+
+    <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
 
 <!-- Global Footer -->
 <footer class="text-center text-white bg-dark">
@@ -88,6 +90,7 @@
           
   </div>
 </footer>
+  
   <!-- Js Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>

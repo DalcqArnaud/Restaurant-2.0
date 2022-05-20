@@ -18,42 +18,82 @@
 </head>
 <body>
 <!-- Global Navbar -->
-<nav class="navbar bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-utensils"></i> La Rose dorée</a>
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span><i class="fa-solid fa-bars" style="color:#fff;"></i></span>
+    <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-dark navbar-toggler-icon"></span>
     </button>
-    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand text-white" href="#"><i class="fa-solid fa-utensils"></i></a>La Rose dorée</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-              <a class="nav-item nav-link active text-white" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-item nav-link text-white" href="menu.html"><i class="fa-solid fa-scroll"></i> Menu</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-item nav-link text-white" href="pictures.html"><i class="fa-solid fa-image"></i> Gallery</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-item nav-link text-white" href="restaurant.html"><i class="fa-solid fa-location-dot"></i> Locations</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-item nav-link text-white" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="menu.html"><i class="fa-solid fa-scroll"></i> Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="pictures.html"><i class="fa-solid fa-image"></i> Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="restaurant.html"><i class="fa-solid fa-location-dot"></i> Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-secondary" aria-current="page" href="#"><i class="fa-solid fa-address-book"></i> Contact</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
 <!-- Contact form -->
-
+<div class="m-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Firstname</label>
+        <input class="form-control" id="exampleFormControlInput1" placeholder="">
+      </div>
+      <div class="col-6 mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Lastname</label>
+        <input class="form-control" id="exampleFormControlInput1" placeholder="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Subject</label>
+        <div class="dropdown me-1">
+          <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+            Select
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+            <li><a class="dropdown-item" href="#">Reservation</a></li>
+            <li><a class="dropdown-item" href="#">Foods & Drinks</a></li>
+            <li><a class="dropdown-item" href="#">Location</a></li>
+            <li><a class="dropdown-item" href="#">Other</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message here ..."></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Submit</i></button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Global Footer -->
 <footer class="text-center text-white bg-dark">

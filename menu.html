@@ -18,36 +18,30 @@
 </head>
 <body>
 <!-- Global Navbar -->
-<nav class="navbar bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-utensils"></i> La Rose dorée</a>
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span><i class="fa-solid fa-bars" style="color:#fff;"></i></span>
+    <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-dark navbar-toggler-icon"></span>
     </button>
-    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand text-white" href="#"><i class="fa-solid fa-utensils"></i></a>La Rose dorée</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-              <a class="nav-item nav-link active text-white" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-item nav-link text-white" href="menu.html"><i class="fa-solid fa-scroll"></i> Menu</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-item nav-link text-white" href="pictures.html"><i class="fa-solid fa-image"></i> Gallery</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-item nav-link text-white" href="restaurant.html"><i class="fa-solid fa-location-dot"></i> Locations</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-item nav-link text-white" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-secondary" aria-current="page" href="#"><i class="fa-solid fa-scroll"></i> Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="pictures.html"><i class="fa-solid fa-image"></i> Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="restaurant.html"><i class="fa-solid fa-location-dot"></i> Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
@@ -55,7 +49,7 @@
 <!-- Menu List -->
 <!-- Food -->
 <div class="row justify-content-center">
-  <h1 class="display-5 pt-5 mt-4 text-center">Food</h1>
+  <h1 class="display-5 mt-4 text-center">Food</h1>
 </div>
 <div class="row justify-content-center">
   <ul class="list-group m-4 w-auto">
