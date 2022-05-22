@@ -17,93 +17,94 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<!-- Global Navbar -->
-<nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-utensils"></i> La Rose dorée</a>
-    <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-dark navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-secondary" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="menu.html"><i class="fa-solid fa-scroll"></i> Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="pictures.html"><i class="fa-solid fa-image"></i> Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="restaurant.html"><i class="fa-solid fa-location-dot"></i> Locations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
-        </li>
-      </ul>
+  <!-- Global Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-utensils"></i> La Rose dorée</a>
+      <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-dark navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#"> <span class="active"><span class="navbtn"><i class="fa-solid fa-house"></i> Home</span></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="menu.html"> <span class="navbtn"><i class="fa-solid fa-scroll"></i> Menu</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pictures.html"><span class="navbtn"><i class="fa-solid fa-image"></i> Gallery</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="restaurant.html"><span class="navbtn"><i class="fa-solid fa-location-dot"></i> Locations</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html"><span class="navbtn"><i class="fa-solid fa-address-book"></i> Contact</span></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Jumbotron -->
-<div class="jumbotron ">
-    <div class="row justify-content-center mt-4 mb-4">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container texte-center">
-                <h1 class="display-1">La Rose dorée</h1>
-                <p class="lead">Tired after a big adventure?</br> Come rest at "La Rose dorée"</p>
-            </div>
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+      <div class="row g-0 justify-content-center mt-4 mb-4">
+          <div class="container text-center">
+              <h1 class="display-1">La Rose dorée</h1>
+              <p class="lead">Tired after a big adventure?</br> Come rest at "La Rose dorée"</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Panels -->
+  <div class="cards">
+    <div class="row g-0 justify-content-center">
+      <div class="card text-center text-white m-2 w-75">
+        <div class="card-header">NEWS</div>
+        <div class="card-body">
+          <h5 class="card-title">Our cooking book is now available!</h5>
+          <p class="card-text">Finds all our recipes in this amazing cooking book</p>
+          <img src="images/CookingBook.jpg" class="card-img-top">
+          <a href="menu.html" class="btn text-white m-4 ">Check it here!</a>
         </div>
-    </div>
-</div>
-
-<!-- Panels -->
-<div class="cards">
-  <div class="row justify-content-center">
-    <div class="card text-center m-2 w-75">
-      <div class="card-header">NEWS</div>
-      <div class="card-body">
-        <h5 class="card-title">Our cooking book is now available!</h5>
-        <p class="card-text">Finds all our recipes in this amazing cooking book</p>
-        <img src="images/CookingBook.jpg" class="card-img-top">
-        <a href="menu.html" class="m-4 btn btn-secondary">Check it here!</a>
       </div>
-    </div>
-    <div class="card text-center m-2 w-75">
-      <div class="card-header">EVENT</div>
-      <div class="card-body">
-        <h5 class="card-title">Midsummer fire festival</h5>
-        <p class="card-text">From 21st June until 5th July <br> Come taste our special meals and admire fire shows</p>
-        <img src="images/FireShow.jpg" class="card-img-top">
-        <a href="restaurant.html" class="m-4 btn btn-secondary">More information!</a>
+      <div class="card text-center text-white m-2 w-75">
+        <div class="card-header">EVENT</div>
+        <div class="card-body">
+          <h5 class="card-title">Midsummer fire festival</h5>
+          <p class="card-text">From 21st June until 5th July <br> Come taste our special meals and admire fire shows</p>
+          <img src="images/FireShow.jpg" class="card-img-top">
+          <a href="restaurant.html" class="btn text-white m-4">More information!</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 <!-- Global Footer -->
-<footer class="text-center text-white bg-dark ">
-  <div class="text-center p-3">
-      <!-- Facebook -->
-      <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.facebook.com/" role="button" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
+<!-- Spacer -->
+<div class="m-5 p-4">
+  <div class="container"></div>
+</div>
+<!-- Footer -->
+  <footer class="text-center text-white fixed-bottom">
+    <!-- Facebook -->
+    <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.facebook.com/" role="button" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
 
-      <!-- Twitter -->
-      <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://twitter.com/home" role="button" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
+    <!-- Twitter -->
+    <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://twitter.com/home" role="button" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
 
-      <!-- Instagram -->
-      <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.instagram.com/" role="button" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
+    <!-- Instagram -->
+    <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.instagram.com/" role="button" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
 
-      © 2022 Copyright: <strong>Arnaud Dalcq</strong> (made with Bootstrap.)
-          
-  </div>
-</footer>
+    © 2022 Copyright: <strong>Arnaud Dalcq</strong> (made with Bootstrap.)
+            
+  </footer>
   <!-- Js Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>

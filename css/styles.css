@@ -1,8 +1,60 @@
+/* Font familly */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* Font familly */
+
+/* Colors */
 body {
-    background-color: aliceblue;
+    background-color: rgb(241, 206, 206);
+    color: #1C3041;
 }
 
-.jumbotron, .cards, .nav {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+[class^="navbar"], footer, [class*="card "], [class^="food"], [class^="drink"], [class*="page-link"], [class*="page-link"]:not([href="#"]):hover{
+    background-color: #1C3041;
 }
+
+[class="active"]{
+    color: #91171f;
+}
+
+.cards>div>div>div>a[class*="btn"], [class*="submitbtn"]{
+    background-color: #91171f;
+}
+
+.cards>div>div>div>a[class*="btn"]:hover{
+    background-color: #4ba3c3;
+}
+
+[class*="fab"]:hover, .pagebtn:hover, .submitbtnhover:hover, .navbtn:hover{
+    color: #4ba3c3;
+}
+
+[class^="notactive"], [class^="notactive"]:hover{
+    color: grey;
+}
+
+ul[class^="pagination"]>li[class*="active"]>a{
+    background: #91171f;
+    border: 1px solid #91171f;
+}
+
+[class*="submitbtn"]:hover, [class*="submitbtn"]:active, [class*="submitbtn"]:visited, [class*="submitbtn"]:focus, [class*="dropdown "]>button, [class*="dropdown "]>button:hover, [class*="dropdown "]>button:visited, [class*="dropdown "]>button:focus, [class*="dropdown "]>button:active{
+    background-color: #91171f;
+    border: 1px solid #91171f;
+}
+/* Colors */
+
+/* google map height responsive */
+@media screen and (min-width: 768px){
+    [class*="gmap"]{
+        height: 100%;
+    }    
+}
+
+@media screen and (max-width: 767px){
+    [class*="gmap"]{
+        height: 500px;
+    }    
+}
+/* google map height responsive */

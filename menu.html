@@ -18,178 +18,185 @@
 </head>
 <body>
 <!-- Global Navbar -->
-<nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-utensils"></i> La Rose dorée</a>
-    <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-dark navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active text-secondary" aria-current="page" href="#"><i class="fa-solid fa-scroll"></i> Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="pictures.html"><i class="fa-solid fa-image"></i> Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="restaurant.html"><i class="fa-solid fa-location-dot"></i> Locations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-utensils"></i> La Rose dorée</a>
+      <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-dark navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html"><span class="navbtn"><i class="fa-solid fa-house"></i> Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-secondary" aria-current="page" href="#"><span class="active"><span class="navbtn"><i class="fa-solid fa-scroll"></i> Menu</span></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pictures.html"><span class="navbtn"><i class="fa-solid fa-image"></i> Gallery</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="restaurant.html"><span class="navbtn"><i class="fa-solid fa-location-dot"></i> Locations</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html"><span class="navbtn"><i class="fa-solid fa-address-book"></i> Contact</span></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Menu List -->
-<!-- Food -->
-<div class="row justify-content-center">
-  <h1 class="display-5 mt-4 text-center">Food</h1>
-</div>
-<div class="row justify-content-center">
-  <ul class="list-group m-4 w-auto">
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-          <strong>Homemade Cherry Pie</strong>
-          <br> Restores 2148 health over 30 sec. Must remain seated while eating.
-          <br> <strong>32PA</strong> 
-          <span class="badge bg-danger rounded-pill"> Requires Level 45</span>
-          <span class="badge bg-info rounded-pill"> Max Stack: 20</span>  
+  <!-- Menu List -->
+  <!-- Food -->
+  <main>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6">
+          <h1 class="display-5 mt-4 text-center">Food</h1>
+          <ul class="list-group m-4 w-auto gap-2">
+              <li class="food list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto text-white">
+                  <h4>Homemade Cherry Pie</h4>
+                  <p>Restores 2148 health over 30 sec. Must remain seated while eating.</p>
+                  <p class="mb-0"><strong>32PA</strong></p>
+                  <span class="badge bg-danger rounded-pill"> Requires Level 45</span>
+                  <span class="badge bg-info rounded-pill"> Max Stack: 20</span>  
+                </div>
+              </li>
+              <li class="food list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto text-white">
+                  <h4>Soft Banana Bread</h4>
+                  <p>Restores 1392 health over 30 sec. Must remain seated while eating.</p>
+                  <p class="mb-0"><strong>16PA</strong></p>
+                  <span class="badge bg-danger rounded-pill"> Requires Level 35</span>
+                  <span class="badge bg-info rounded-pill"> Max Stack: 20</span>  
+                </div>
+              </li>
+              <li class="food list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto text-white">
+                  <h4>Mulgore Spice Bread</h4>
+                  <p>Restores 874.8 health over 27 sec. Must remain seated while eating.</p>
+                  <p class="mb-0"><strong>8PA</strong></p>
+                  <span class="badge bg-danger rounded-pill"> Requires Level 25</span>
+                  <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
+                </div>
+              </li>
+              <li class="food list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto text-white">
+                  <h4>Moist Cornbread</h4>
+                  <p>Restores 552 health over 24 sec. Must remain seated while eating.</p>
+                  <p class="mb-0"><strong>4PA</strong></p>
+                  <span class="badge bg-danger rounded-pill"> Requires Level 15</span>
+                  <span class="badge bg-info rounded-pill"> Max Stack: 20</span>   
+                </div>
+              </li>
+              <li class="food list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto text-white">
+                  <h4>Freshly Baked Bread</h4>
+                  <p>Restores 243.6 health over 21 sec. Must remain seated while eating.</p>
+                  <p class="mb-0"><strong>1PA</strong></p>
+                  <span class="badge bg-danger rounded-pill"> Requires Level 5</span>
+                  <span class="badge bg-info rounded-pill"> Max Stack: 20</span>  
+                </div>
+              </li>
+              <li class="food list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto text-white">
+                  <h4>Tough Hunk of Bread</h4>
+                  <p>Restores 61.2 health over 18 sec. Must remain seated while eating.</p>
+                  <p class="mb-0"><strong>26PC</strong></p>
+                  <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
+                </div>
+              </li>
+          </ul>
         </div>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <strong>Soft Banana Bread</strong>
-          <br> Restores 1392 health over 30 sec. Must remain seated while eating.
-          <br> <strong>16PA</strong> 
-          <span class="badge bg-danger rounded-pill"> Requires Level 35</span>
-          <span class="badge bg-info rounded-pill"> Max Stack: 20</span>  
-          </div>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <strong>Mulgore Spice Bread</strong>
-          <br> Restores 874.8 health over 27 sec. Must remain seated while eating.
-          <br> <strong>8PA</strong> 
-          <span class="badge bg-danger rounded-pill"> Requires Level 25</span>
-          <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
-          </div>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <strong>Moist Cornbread</strong>
-          <br> Restores 552 health over 24 sec. Must remain seated while eating.
-          <br> <strong>4PA</strong> 
-          <span class="badge bg-danger rounded-pill"> Requires Level 15</span>
-          <span class="badge bg-info rounded-pill"> Max Stack: 20</span>   
-          </div>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <strong>Freshly Baked Bread</strong>
-          <br> Restores 243.6 health over 21 sec. Must remain seated while eating.
-          <br> <strong>1PA</strong> 
-          <span class="badge bg-danger rounded-pill"> Requires Level 5</span>
-          <span class="badge bg-info rounded-pill"> Max Stack: 20</span>  
-          </div>
-      </li>
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <strong>Tough Hunk of Bread</strong>
-          <br> Restores 61.2 health over 18 sec. Must remain seated while eating.
-          <br> <strong>26PC</strong> 
-          <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
-          </div>
-      </li>
-  </ul>
-  <!-- Drink -->
-  <div class="row justify-content-center">
-    <h1 class="display-5 mt-4 text-center">Drink</h1>
+        <!-- Drink -->
+        <div class="col-sm-12 col-md-6">
+          <h1 class="display-5 mt-4 text-center">Drink</h1>
+          <ul class="list-group m-4 w-auto gap-2">
+            <li class="drink list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto text-white">
+                <h4>Morning Glory Dew</h4>
+                <p>Restores 2934 mana over 30 sec. Must remain seated while drinking.</p>
+                <p class="mb-0"><strong>32PA</strong></p>
+                <span class="badge bg-danger rounded-pill"> Requires Level 45</span>
+                <span class="badge bg-info rounded-pill"> Max Stack: 20</span>         
+              </div>        
+            </li>
+            <li class="drink list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto text-white">
+                <h4>Moonberry Juice</h4>
+                <p>Restores 1992 mana over 30 sec. Must remain seated while drinking.</p>
+                <p class="mb-0"><strong>16PA</strong></p>
+                <span class="badge bg-danger rounded-pill"> Requires Level 35</span>
+                <span class="badge bg-info rounded-pill"> Max Stack: 20</span>
+              </div>
+            </li>
+            <li class="drink list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto text-white">
+                <h4>Sweet Nectar</h4>
+                <p>Restores 1344.6 mana over 27 sec. Must remain seated while drinking.</p>
+                <p class="mb-0"><strong>8PA</strong></p>
+                <span class="badge bg-danger rounded-pill"> Requires Level 25</span>
+                <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
+              </div>
+            </li>
+            <li class="drink list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto text-white">
+                <h4>Melon Juice</h4>
+                <p>Restores 835.2 mana over 24 sec. Must remain seated while drinking.</p>
+                <p class="mb-0"><strong>4PA</strong></p>
+                <span class="badge bg-danger rounded-pill"> Requires Level 15</span>
+                <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
+              </div>
+            </li>
+            <li class="drink list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto text-white">
+                <h4>Ice Cold Milk</h4>
+                <p>Restores 436.8 mana over 21 sec. Must remain seated while drinking.</p>
+                <p class="mb-0"><strong>1PA</strong></p>
+                <span class="badge bg-danger rounded-pill"> Requires Level 5</span>
+                <span class="badge bg-info rounded-pill"> Max Stack: 20</span>  
+              </div>
+            </li>
+            <li class="drink list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto text-white">
+                <h4>Refreshing Spring Water</h4>
+                <p>Restores 151.2 mana over 18 sec. Must remain seated while drinking.</p>
+                <p class="mb-0"><strong>27PC</strong></p>        
+                <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <!-- Spacer -->
+  <div class="m-5 p-4">
+    <div class="container"></div>
   </div>
-  <ul class="list-group m-4 w-auto">
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <strong>Morning Glory Dew</strong>
-        <br> Restores 2934 mana over 30 sec. Must remain seated while drinking.
-        <br> <strong>32PA</strong> 
-        <span class="badge bg-danger rounded-pill"> Requires Level 45</span>
-        <span class="badge bg-info rounded-pill"> Max Stack: 20</span>         
-      </div>        
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <strong>Moonberry Juice</strong>
-        <br> Restores 1992 mana over 30 sec. Must remain seated while drinking.
-        <br> <strong>16PA</strong> 
-        <span class="badge bg-danger rounded-pill"> Requires Level 35</span>
-        <span class="badge bg-info rounded-pill"> Max Stack: 20</span>
-      </div>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <strong>Sweet Nectar</strong>
-      <br> Restores 1344.6 mana over 27 sec. Must remain seated while drinking.
-      <br> <strong>8PA</strong> 
-      <span class="badge bg-danger rounded-pill"> Requires Level 25</span>
-      <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
-      </div>
-  </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <strong>Melon Juice</strong>
-      <br> Restores 835.2 mana over 24 sec. Must remain seated while drinking.
-      <br> <strong>4PA</strong> 
-      <span class="badge bg-danger rounded-pill"> Requires Level 15</span>
-      <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
-      </div>
-  </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <strong>Ice Cold Milk</strong>
-      <br> Restores 436.8 mana over 21 sec. Must remain seated while drinking.
-      <br> <strong>1PA</strong> 
-      <span class="badge bg-danger rounded-pill"> Requires Level 5</span>
-      <span class="badge bg-info rounded-pill"> Max Stack: 20</span>  
-      </div>
-  </li>
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <strong>Refreshing Spring Water</strong>
-      <br> Restores 151.2 mana over 18 sec. Must remain seated while drinking.
-      <br> <strong>27PC</strong>        
-      <span class="badge bg-info rounded-pill"> Max Stack: 20</span> 
-      </div>
-  </li>
-  </ul>
-</div>
+  <!-- Footer -->
+  <footer class="text-center text-white fixed-bottom">
+    <!-- Facebook -->
+    <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.facebook.com/" role="button" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
 
-<!-- Global Footer -->
-<footer class="text-center text-white bg-dark">
-  <div class="text-center p-3">
-      <!-- Facebook -->
-      <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.facebook.com/" role="button" target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
+    <!-- Twitter -->
+    <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://twitter.com/home" role="button" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
 
-      <!-- Twitter -->
-      <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://twitter.com/home" role="button" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
+    <!-- Instagram -->
+    <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.instagram.com/" role="button" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
 
-      <!-- Instagram -->
-      <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.instagram.com/" role="button" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-
-      © 2022 Copyright: <strong>Arnaud Dalcq</strong> (made with Bootstrap.)
-          
-  </div>
-</footer>
+    © 2022 Copyright: <strong>Arnaud Dalcq</strong> (made with Bootstrap.)
+            
+  </footer>
   <!-- Js Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
