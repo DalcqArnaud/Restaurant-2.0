@@ -1,3 +1,6 @@
+<?php 
+  include 'connect.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,6 +52,44 @@
     </div>
   </nav>
 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12">
+        <h1 class="display-5 mt-4 text-center">Messages</h1>
+        <ul class="list-group m-4 w-auto gap-2">
+          <?php
+            $sql = "select * from `contact_messages`";
+            
+            $result = $conn -> query($sql);
+            
+            $values = $result -> fetchAll(PDO::FETCH_ASSOC);
+            
+            foreach($values as $row){
+              
+              $id=$row['id'];
+              $date=$row['Date'];
+              $name=$row['Name'];
+              $email=$row['Email'];
+              $message=$row['Message'];
+
+              echo '<li class="backOfficeContainer list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto text-white">
+                        <p class="mb-0"><strong>N° : '. $id .'</strong></p> 
+                        <p class="mb-0"><strong>Date : '. $date .'</strong></p> 
+                        <h4>Name : '. $name .'</h4>
+                        <h5>Email : '. $email .'</h5>
+                        <p class="text-break">Message : '. $message .'</p>
+                        <button type="button" class="btn text-white submitbtn"><a href="delete.php?deleteid='.$id.'" class="text-decoration-none text-white"><span class="submitbtnhover">Delete</span></a></button>
+                      </div>
+                    </li>';
+            }
+          ?>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
 
 <!-- Global Footer -->
   <!-- Spacer -->

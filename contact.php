@@ -1,3 +1,6 @@
+<?php 
+  include 'connect.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,6 +20,21 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+  <?php 
+    if(isset($_POST['submitBtn'])){
+        $date = new DateTime("now", new DateTimeZone('Europe/Brussels'));
+        $currentDate = $date -> format('Y-m-d H:i');
+        $firstName = filter_var($_POST['firstName'], FILTER_SANITIZE_STRING);
+        $lastName = filter_var($_POST['lastName'], FILTER_SANITIZE_STRING);
+        $name = $firstName . " " . $lastName;
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+        $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+
+        $sql="insert into contact_messages (Date,Name,Email,Message) values('$currentDate','$name','$email','$message')";
+        $result=$conn->prepare($sql);
+        $result->execute();
+    }
+  ?>
   <!-- Global Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -52,49 +70,51 @@
   <!-- Contact form -->
   <div class="m-5">
     <div class="container">
-      <div class="row">
-        <div class="col-6 mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Firstname</label>
-          <input class="form-control" id="exampleFormControlInput1" placeholder="">
-        </div>
-        <div class="col-6 mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Lastname</label>
-          <input class="form-control" id="exampleFormControlInput1" placeholder="">
-        </div>
-      </div>
-      <div class="row gx-0">
-        <div class="col-12 mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-      </div>
-      <div class="row gx-0">
-        <div class="col-12 mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Subject</label>
-          <div class="dropdown me-1">
-            <button type="button" class="btn dropdown-toggle text-white" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-              Select
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-              <li><a class="dropdown-item" href="#">Reservation</a></li>
-              <li><a class="dropdown-item" href="#">Foods & Drinks</a></li>
-              <li><a class="dropdown-item" href="#">Location</a></li>
-              <li><a class="dropdown-item" href="#">Other</a></li>
-            </ul>
+      <form method="post">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Firstname</label>
+            <input class="form-control" name="firstName" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Lastname</label>
+            <input class="form-control" name="lastName" id="exampleFormControlInput1" placeholder="">
           </div>
         </div>
-      </div>
-      <div class="row gx-0">
-        <div class="col-12 mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message here ..."></textarea>
+        <div class="row gx-0">
+          <div class="col-12 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
         </div>
-      </div>
-      <div class="row gx-0">
-        <div class="col-12">
-          <button type="submit" class="btn text-white submitbtn"><span class="submitbtnhover"><i class="fa-solid fa-paper-plane"></i> Submit</span></button>
+        <div class="row gx-0">
+          <div class="col-12 mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Subject</label>
+            <div class="dropdown me-1">
+              <button type="button" class="btn dropdown-toggle text-white" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                Select
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                <li><a class="dropdown-item" href="#">Reservation</a></li>
+                <li><a class="dropdown-item" href="#">Foods & Drinks</a></li>
+                <li><a class="dropdown-item" href="#">Location</a></li>
+                <li><a class="dropdown-item" href="#">Other</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="row gx-0">
+          <div class="col-12 mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message here ..."></textarea>
+          </div>
+        </div>
+        <div class="row gx-0">
+          <div class="col-12">
+            <button type="submit" name="submitBtn" class="btn text-white submitbtn"><span class="submitbtnhover"><i class="fa-solid fa-paper-plane"></i> Submit</span></button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 
